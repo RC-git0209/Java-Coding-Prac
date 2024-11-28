@@ -9,7 +9,9 @@ public class FirstNonRepeatedChar {
 		
 		Map<Character, Long> charCountMap = s.chars()
 				.mapToObj(c -> (char) c)
-				.collect(Collectors.groupingBy(Function.identity(), LinkedHashMap :: new, Collectors.counting()));
+				.collect(Collectors.groupingBy(
+						Function.identity(), LinkedHashMap :: new, Collectors.counting()
+						));
 		
 		return charCountMap.entrySet().stream()
 				.filter(entry -> entry.getValue() == 1)
@@ -21,7 +23,7 @@ public class FirstNonRepeatedChar {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String s = "rroohhaann";
+		String s = "roohhaann";
 		
 		Character result = findFirstNonRepeatedChar(s);
 		
