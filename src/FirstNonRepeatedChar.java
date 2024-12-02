@@ -30,7 +30,7 @@ public class FirstNonRepeatedChar {
 		if(result != null) {
 			System.out.println("The first non-repeated character is:" + result);
 		} else {
-				System.out.println("No non-repeated character found.");
+				System.out.println("No non-repeated character found. new code changes");
 			}
 		}
 
