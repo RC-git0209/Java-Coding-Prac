@@ -23,7 +23,7 @@ public class MaxProfitStocks {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int [] prices = {1, 2, 9, 7, 6};
+		int [] prices = {2, 5, 9, 4, 7};
 		System.out.println("Maximum Profit: " + maxProfit(prices));
 
 }
