@@ -34,16 +34,15 @@ return longestStreak;
     }      
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		LongestConsecutive solution = new LongestConsecutive();
 
-        // Example 1
-        int[] nums1 = {100, 4, 200, 1, 3, 2};
-        System.out.println("Longest consecutive sequence length: " + solution.longestConsecutive(nums1)); // Output: 4
+       
+        int[] number1 = {100, 4, 200, 1, 3, 2, 300, 5, 400};
+        System.out.println("Longest consecutive length: " + solution.longestConsecutive(number1)); 
 
-        // Example 2
-        int[] nums2 = {0, 3, 7, 2, 5, 8, 4, 6, 0, 1};
-        System.out.println("Longest consecutive sequence length: " + solution.longestConsecutive(nums2)); // Output: 9
+        
+        int[] number2 = {0, 3, 7, 2, 5, 4, 6, 0, 1};
+        System.out.println("Longest consecutive length: " + solution.longestConsecutive(number2)); 
 	}
 
 }
