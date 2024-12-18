@@ -26,7 +26,7 @@ public class FirstOccuranceOfString {
 
         
         String haystack2 = "leetcode";
-        String needle2 = "leet";
+        String needle2 = "leeto";
         System.out.println("Output: " + strStr(haystack2, needle2)); 
 	}
 
