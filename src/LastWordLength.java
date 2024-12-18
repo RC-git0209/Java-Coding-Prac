@@ -1,4 +1,3 @@
-
 public class LastWordLength {
 	public static int lengthOfLastWord(String s) {
         // Trim any trailing or leading spaces
@@ -17,12 +16,21 @@ public class LastWordLength {
         System.out.println("Output: " + lengthOfLastWord(s1)); 
 
         
-        String s2 = "   fly me   to   the moon  ";
+        String s2 = "fly me to the moon  ";
         System.out.println("Output: " + lengthOfLastWord(s2)); 
 
         
-        String s3 = "luffy is still joyboy";
+        String s3 = "luffy is still joy boy";
         System.out.println("Output: " + lengthOfLastWord(s3)); 
 	}
-
 }
+
+
+
+
+
+
+
+
+
+
