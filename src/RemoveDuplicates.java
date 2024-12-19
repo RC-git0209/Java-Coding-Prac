@@ -16,7 +16,7 @@ public class RemoveDuplicates {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String s = "applemangotang";
+		String s = "AppleeRaaamShyaammWooraa";
 		String result = removeDuplicates(s);
 		System.out.println("Original String: " + s);
 		System.out.println("String after removing Duplicates: " + result);
