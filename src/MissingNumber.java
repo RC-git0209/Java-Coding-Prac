@@ -11,7 +11,7 @@ public class MissingNumber {
 				missingNumbers.add(expected);
 				expected++;
 			}
-			expected = num + 1;
+			expected = num+1;
 		}
 		while(expected <= end) {
 			missingNumbers.add(expected);
@@ -23,9 +23,9 @@ public class MissingNumber {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] arr = {1, 2, 4, 6, 7, 10}; //Sorted Array
+		int[] arr = {1, 2, 4, 6, 7, 10, 13}; //Sorted Array
 		int start = 1; //Range start
-		int end = 10; // Range end
+		int end = 0; //= 0; // Range end
 		
 		List<Integer> missingNumbers = findMissingNumbers(arr, start, end);
 		System.out.println("Missing numbers: " + missingNumbers);
