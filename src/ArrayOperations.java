@@ -5,6 +5,8 @@ public class ArrayOperations {
 	public static void main(String[] args) {
 		int[] arr = {2,5,3,6,7,11,9};
 		
+		System.out.println("Array before sorting: " + Arrays.toString(arr));
+		
 		performOperations(arr);
 		
 		Arrays.sort(arr);
