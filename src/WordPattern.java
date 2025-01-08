@@ -39,7 +39,6 @@ public class WordPattern {
 	            }
 	        }
 	        
-	        // If no conflicts arise, the string follows the pattern
 	        return true;
 	    }
 
