@@ -8,13 +8,14 @@ public class FilterAndTransformNames {
 		// List of names
 		List<String> names = Arrays.asList("john","Sam","Jane","Jack","Doe","jimmy");
 		
+		System.out.println("List of Names :" + names);
 		// Filter names containing "J" (case-insensitive) and convert them to uppercase
 		List<String> result = names.stream()
 				.filter(name -> name.toLowerCase().contains("j")) // check if "J" exists
 				.map(String::toUpperCase) // convert to uppercase
 				.collect(Collectors.toList()); // Collect to list
 		
-		System.out.println(result);
+		System.out.println("Converting to uppercase and names with J :" + result);
 
 	}
 
