@@ -9,11 +9,11 @@ public class RearrangeArrays {
 			for(int i=0; i<nums.length; i++) {
 				if(nums[i] > 0) {
 					result[positiveIndex] = nums[i];
-					positiveIndex = positiveIndex + 2;
+					positiveIndex += 2;
 				}
 				else {
 					result[negativeIndex] = nums[i];
-					negativeIndex = negativeIndex + 2;
+					negativeIndex += 2;
 				}
 			}
 			return result;
@@ -21,6 +21,7 @@ public class RearrangeArrays {
 		public static void main(String[] args) {
 			int [] nums = {3,-2,5,-7,1,-9,0,8};
 			int [] rearrangedArray = rearrangeArray(nums);
+			//System.out.println("normal array :" + (nums));
 			System.out.println("rearranged array :" + Arrays.toString(rearrangedArray));
 
 	}
