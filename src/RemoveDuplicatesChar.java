@@ -1,7 +1,7 @@
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-public class RemoveDuplicates {
+public class RemoveDuplicatesChar {
 	public static String removeDuplicates(String s) {
 		Set<Character> seen = new LinkedHashSet<>();
 		StringBuilder result = new StringBuilder();
