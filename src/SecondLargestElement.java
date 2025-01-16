@@ -6,21 +6,40 @@ public class SecondLargestElement {
 	{
 		int n = arr.length;
 		
-		Arrays.sort(arr);
+		int largest = -1, secondLargest = -1;
 		
-		for(int i=n-2; i>=0; i--)
+		// Part1 for find secondLargest
+		//Arrays.sort(arr);
+		
+		/*for(int i=n-2; i>=0; i--)
 		{
 			if(arr[i] != arr[n-1])
 			{
 				return arr[i];
 			}
 		}
-		
 		return -1;
+	}*/
+		
+		//Part 2 to find secondLArgest
+		for(int i=0; i<n; i++)
+		{
+			if (arr[i] > largest)
+				largest = arr[i];
+		}
+		
+		for(int i=0; i<n; i++)
+		{
+			if(arr[i] > secondLargest && arr[i] != largest)
+			{
+				secondLargest = arr[i];
+			}
+		}
+		return secondLargest;
 	}
 
 	public static void main(String[] args) {
-		int arr[] = {2, 45, 66, 76, 34, 9};
+		int arr[] = {2, 45, 76, 34, 9};
 		
 		System.out.println(getSecondLargest(arr));
 
