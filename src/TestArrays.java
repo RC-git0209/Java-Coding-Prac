@@ -10,6 +10,7 @@ public class TestArrays {
 			System.out.println("Print the element in array" + myList[i]);
 		}
 		
+		//summing all the elements
 		double total = 0;
 		
 		for(int i=0; i<myList.length; i++)
@@ -17,6 +18,15 @@ public class TestArrays {
 			total += myList[i];
 		}
 		System.out.println("Total is " + total);
+		
+		
+		//find the largest element
+		double max = myList[0];
+		for(int i=1; i<myList.length; i++)
+		{
+			if(myList[i] > max) max = myList[i];
+		}
+		System.out.println("Max is" + max);
 
 	}
 
