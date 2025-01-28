@@ -5,16 +5,25 @@ public class ThreadDeadLock {
         Object obj1 = new Object();
         Object obj2 = new Object();
         Object obj3 = new Object();
+        Object obj4 = new Object();
+        Object obj5 = new Object();
+        
     
         Thread t1 = new Thread(new SyncThread(obj1, obj2), "t1");
         Thread t2 = new Thread(new SyncThread(obj2, obj3), "t2");
         Thread t3 = new Thread(new SyncThread(obj3, obj1), "t3");
+        Thread t4 = new Thread(new SyncThread(obj4, obj1), "t3");
+        Thread t5 = new Thread(new SyncThread(obj5, obj1), "t3");
         
         t1.start();
         Thread.sleep(5000);
         t2.start();
         Thread.sleep(5000);
-        t3.start();        
+        t3.start();
+        Thread.sleep(5000);
+        t4.start();
+        Thread.sleep(5000);
+        t5.start();
     }
 
 }
@@ -23,10 +32,14 @@ class SyncThread implements Runnable {
 
     private Object obj1;
     private Object obj2;
+    private Object obj3;
+    private Object obj4;
 
-    public SyncThread(Object o1, Object o2) {
+    public SyncThread(Object o1, Object o2, Object o3, Object o4) {
         this.obj1 = o1;
         this.obj2 = o2;
+        this.obj3 = o3;
+        this.obj4 = o4;
     }
 
     @Override
@@ -50,7 +63,7 @@ class SyncThread implements Runnable {
 
     private void work() {
         try {
-            Thread.sleep(30000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
