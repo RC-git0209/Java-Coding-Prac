@@ -7,7 +7,6 @@ import java.util.*;
 public class MaxRepeatedNumber {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int[] input = {2, 3, 4, 2, 3, 4, 1, 2};
 		Optional<Integer> maxRepeatedNumber = findMaxRepeatedNumber(input);
 		
